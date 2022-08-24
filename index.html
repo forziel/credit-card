@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kredi kartı</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="card-container">
+            <div class="back-side">
+                <img src="images/bg-card-back.png" alt="">
+                <div class="content">
+                    <div class="cvv">753</div>
+                </div>
+            </div>
+    
+            <div class="front-side">
+                <img src="images/bg-card-front.png" alt="">
+                <div class="content">
+                    <div class="under">
+                        <div class="logo">𝒇𝒐𝒓𝒛𝒊𝒆𝒍 𝑪𝒂𝒓𝒅</div>
+                        <div class="brands">
+                            <img src="images/MasterCard.svg" class="mastercard" alt="">
+                            <img src="images/visa-10.svg" class="visa" alt="">
+                            <img src="images/chip.png" class="chip" alt="">
+                        </div>
+                    </div>
+                    <div class="card-number">**** **** **** ****</div>
+                    <div class="over">
+                        <div class="name">Ali Güvenç</div>
+                        <div class="exp-date">
+                            <span class="month">00</span>
+                            /
+                            <span class="year">00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input placeholder="Kart Numarası" type="text" class="card-number">
+            <input placeholder="İsim Soyisim" type="text" class="name">
+            <div class="exp-date">
+                <select id="month">
+                    <option value="Month" selected>Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                /
+                <select id="year">
+                    <option value="Year" selected>Year</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+            <input maxlength="3" placeholder="CVV" type="text" class="cvv">
+        </div>
+
+        <div class="direction">
+            <ul>
+                <li>Sağ üst kısımdaki ︙ bas</li>
+                <li>Masaüstü sitesi seçeneğini işaretle</li>
+            </ul>
+        </div>
+    </div>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js" integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="cleave.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

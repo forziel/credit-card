@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.rotate- {
+  transform: rotateY(-180deg);
+}
+
+.rotate + {
+  transform: rotateY(180deg);
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom right, slateblue, transparent);
+}
+.container .card-container {
+  margin-bottom: 50px;
+  width: 447px;
+  height: 225px;
+  position: relative;
+}
+.container .card-container .back-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.8s all;
+  perspective: 10px;
+}
+.container .card-container .back-side .content .cvv {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transform: rotateY(180deg);
+  width: 40px;
+}
+.container .card-container .front-side {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: 0.8s all;
+  perspective: 10px;
+}
+.container .card-container .front-side .content {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  color: whitesmoke;
+}
+.container .card-container .front-side .content .under {
+  display: flex;
+  align-items: center;
+}
+.container .card-container .front-side .content .under .logo {
+  font-size: 18px;
+}
+.container .card-container .front-side .content .under .brands {
+  width: 60px;
+  height: 48px;
+  margin-left: 220px;
+  position: relative;
+}
+.container .card-container .front-side .content .under .brands .mastercard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 60px;
+  display: none;
+}
+.container .card-container .front-side .content .under .brands .visa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 60px;
+  display: none;
+}
+.container .card-container .front-side .content .under .brands .chip {
+  height: 45px;
+  width: 50px;
+}
+.container .card-container .front-side .content .card-number {
+  margin-top: 55px;
+  margin-bottom: 25px;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+.container .card-container .front-side .content .over {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.container .card-container .front-side .content .over .name {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.container .card-container .front-side .content .over .exp-date {
+  margin-left: 240px;
+  position: absolute;
+  right: 0;
+}
+.container .input-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .input-container .card-number,
+.container .input-container .name,
+.container .input-container .cvv {
+  padding: 10px 5px 10px 15px;
+}
+.container .input-container .cvv {
+  width: 70px;
+}
+.container .input-container .exp-date #month {
+  padding: 5px 10px;
+  font-weight: 500;
+  border: 2px solid slateblue;
+  outline: none;
+}
+.container .input-container .exp-date #year {
+  padding: 5px 10px;
+  font-weight: 500;
+  border: 2px solid slateblue;
+  outline: none;
+}
+.container .direction {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .container .input-container {
+    display: none;
+  }
+  .container .card-container {
+    display: none;
+  }
+  .container .direction {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
